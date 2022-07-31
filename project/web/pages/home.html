@@ -1,0 +1,218 @@
+<style>
+       <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"></link>
+       <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"></link>
+/* End Fonts */
+/* Start Global rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* End Global rules */
+    body {
+      background-image: url('https://i.pinimg.com/originals/99/ae/4e/99ae4eec3b8eb0c63dc9b08996cee8ad.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      
+/*   the main font */
+    font-family: font-family: 'Comfortaa', cursive;
+opacity: .95;
+    }
+
+/* Start form  attributes */
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    padding: 2%;
+  
+}
+/* form Container */
+form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+/* the header form form */
+header {
+    margin: 10% auto 10% auto;
+    text-align: center;
+}
+/* Login title form form */
+header h2 {
+    margin: 7% auto 10% auto
+    font-size: 250%;
+    font-family: 'Bangers', cursive;
+    color: #3e403f;
+}
+/*  A welcome message or an explanation of the login form */
+header p {margin: 10% auto 10% auto;
+    letter-spacing: 0.05em;
+    font-family: 'Comfortaa', cursive
+      }
+
+.input-item {
+    background: rgb(165, 195, 208);
+    color: #333;
+    padding: 5px 5px 5px 5px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+}
+/* inputs form  */
+input[class="form-input"]{
+    width: 240px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family:  'Comfortaa', cursive;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width: 250px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    color: #252537;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: transparent;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     Sign Up button  */
+.sign-up {background: #9ac5d2;}
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+ </style>
+
+<script>function mainpage() {
+window.open("C:\\Users\\Nimtavya Enterprises\\Desktop\\school\\CS\\project\\web\\\\pages\\main2.html");
+
+
+}
+</script>
+<div class="overlay">
+    
+    <form>
+       <!--   con = Container  for items in the form-->
+       <div class="con">
+       <!--     Start  header Content  -->
+       <header class="head-form">
+          <h2>Log In</h2>
+          <!--     A welcome message or an explanation of the login form -->
+          <p>login here using your username and password</p>
+       </header>
+       <!--     End  header Content  -->
+       <br>
+       <div class="field-set">
+         
+          <!--   user name -->
+             <span class="input-item">
+               <i class="fa fa-user-circle"></i>
+             </span>
+            <!--   user name Input-->
+             <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+         
+          <br>
+         
+               <!--   Password -->
+         
+          <span class="input-item">
+            <i class="fa fa-key"></i>
+           </span>
+          <!--   Password Input-->
+          <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+         
+
+          <br>
+    <!--        buttons -->
+    <!--      button LogIn -->
+          <button class="log-in" onclick = 'mainpage()' > Log In </button>
+       </div>
+      
+    <!--   other buttons -->
+       <div class="other">
+    <!--      Forgot Password button-->
+          <button class="btn submits frgt-pass">Forgot Password</button>
+    <!--     Sign Up button -->
+          <button class="btn submits sign-up">Sign Up 
+    <!--         Sign Up font icon -->
+          <i class="fa fa-user-plus" aria-hidden="true"></i>
+          </button>
+    <!--      End Other the Division -->
+       </div>
+         
+    <!--   End Conrainer  -->
+      </div>
+      
+      <!-- End Form -->
+    </form>
+    </div>
